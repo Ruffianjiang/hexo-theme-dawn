@@ -1,28 +1,28 @@
 menu:
-  docs: Docs
+  docs: Dokumentation
   api: API
-  news: News
+  news: Neuigkeiten
   plugins: Plugins
   themes: Themes
-  search: Search
+  search: Suche
 
 index:
-  get_started: Get started
+  get_started: Leg los
 
 page:
-  contents: Contents
-  back_to_top: Back to Top
-  improve: Improve this doc
-  prev: Prev
-  next: Next
-  last_updated: "Last updated: %s"
+  contents: Inhalt
+  back_to_top: Nach oben
+  improve: Dieses Dokument verbessern
+  prev: Zurück
+  next: Vor
+  last_updated: "Zuletzt aktualisiert: %s"
 
 sidebar:
   docs:
-    getting_started: Getting Started
-    overview: Overview
-    setup: Setup
-    configuration: Configuration
+    getting_started: Leg los
+    overview: Übersicht
+    setup: Einrichtung
+    configuration: Konfiguration
     commands: Commands
     migration: Migration
     basic_usage: Basic Usage

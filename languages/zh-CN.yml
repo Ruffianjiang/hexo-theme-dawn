@@ -1,94 +1,69 @@
 menu:
-  Home: 首页
-  Archives: 归档
-  Categories: 分类
-  Tags: 标签
-  Repository: 项目
-  Books: 书单
-  Movies: 电影
-  Links: 友链
-  About: 关于
-nav:
-  all: All
-  older: 下一篇
-  newer: 上一篇
-page:
-  home: 主页
-  archive: 归档
-  archives: 归档
-  category: 分类
-  categories: 分类
-  tag: 标签
-  tags: 标签
-  tagcloud: 标签云
-  uncategorized: 未分类
-  repository: 项目
-  douban: 我的豆瓣
-  books: 书单
-  books-desc: 个人收藏的书单推荐给大家
-  movies: 电影
-  movies-desc: 个人喜欢的电影推荐给大家
-  links: 友情链接
-  links-desc: 欢迎交换链接，可在当前页面留言
-  about: 关于
-pagination: 
-  next: 下一页
-  prev: 上一页 
-  page: 第 %d 页
-  pageof: Page %d of %s
-widget:
+  docs: 文档
+  api: API
+  news: 新闻
+  plugins: 插件
+  themes: 主题
   search: 搜索
-  board: 公告
-  archive: 归档
-  tags: 标签
-  categories: 分类
-  tagcloud: 标签云
-  recent_posts: 最新文章
-profile: 
-  follow: 关注
-  skill: 技能
-  label: 个人标签
-  work: 个人作品
-  project: 个人项目
-  link: 个人链接
-insight:
-  hint: 想要查找什么...
-  posts: 文章
-  pages: 页面
-  categories: 分类
-  tags: 标签
-  untitled: (未命名)
-unit:
-  word: 字
-  time: 分
-article:
-  wordcount: 字数统计
-  readcount: 阅读时长
-  more: 查看更多
-  comments: 评论
-  share: 分享到
-  catalogue: 文章目录
-total:
-  article: 共 %d 篇文章
-  tag: 共 %d 个标签
-  category: 共 %d 个分类
-  link: 共 %d 个友情链接
-  repository: 共 %d 个项目
-donate:
-  qrcode_alt: 扫码支持
-  qrcode_title: 扫一扫
-  button: 赏
-  title: 感谢您的支持，我会继续努力的!
-  tip: 扫码打赏，你说多少就多少
-  alipay_action_tip: 打开支付宝扫一扫，即可进行扫码打赏哦
-  wechatpay_action_tip: 打开微信扫一扫，即可进行扫码打赏哦
-  alipay: 支付宝
-  wechatpay: 微信支付
-comment: 评论
-tweets: 推文
-share: Share
-rss_feed: RSS Feed
-copyright:
-  theme_by: Theme by
-  base_on: base on
-  powered_by: Powered by
+
+index:
+  get_started: 开始使用
+
+page:
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
+  last_updated: 上次更新：%s
+
+sidebar:
+  docs:
+    getting_started: 开始使用
+    overview: 概述
+    setup: 建站
+    configuration: 配置
+    commands: 命令
+    migration: 迁移
+    basic_usage: 基本操作
+    writing: 写作
+    front_matter: Front-matter
+    tag_plugins: 标签插件
+    asset_folders: 资源文件夹
+    data_files: 数据文件夹
+    server: 服务器
+    generating: 生成器
+    deployment: 部署
+    customization: 自定义
+    permalinks: 永久链接
+    themes: 主题
+    structure: 结构
+    templates: 模版
+    variables: 变量
+    helpers: 辅助函数
+    internationalization: 国际化 (i18n)
+    plugins: 插件
+    miscellaneous: 其他
+    troubleshooting: 问题解答
+    contributing: 贡献
+  api:
+    core: 核心
+    overview: 概述
+    events: 事件
+    locals: 本地变量
+    router: 路由
+    box: 盒(Box)
+    rendering: 渲染
+    posts: 文章
+    scaffolds: 模版 (Scaffold)
+    themes: 主题
+    extensions: 扩展
+    console: 控制台 (Console)
+    deployer: 部署器 (Deployer)
+    filter: 过滤器 (Filter)
+    generator: 生成器 (Generator)
+    helper: 辅助函数 (Helper)
+    migrator: 迁移器 (Migrator)
+    processor: 处理器 (Processor)
+    renderer: 渲染引擎 (Renderer)
+    tag: 标签 (Tag)
