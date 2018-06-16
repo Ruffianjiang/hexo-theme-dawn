@@ -1,5 +1,10 @@
 <% if (theme.pv.busuanzi.enable) { %>
-<script defer src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script defer src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<% } %>
+
+<% if (theme.pv.cnzz.enable) { %>
+<script src="https://s19.cnzz.com/z_stat.php?id=<%= theme.pv.cnzz.web_id %>&web_id=<%= theme.pv.cnzz.web_id %>" language="JavaScript"></script>
 <% } %>
 
 <% if(theme.pv.leancloud.enable){  %>
@@ -14,15 +19,15 @@ AV.init({
 function showTime(Counter) {
 	var query = new AV.Query(Counter);
 		var visitors= $('.leancloud_visitors');
-		query.greaterThanOrEqualTo("time", 0);		
+		query.greaterThanOrEqualTo("time", 0);
 		query.find({
 			success: function(results) {
-				if (results.length == 0) {				
+				if (results.length == 0) {
 					return;
 				}
 				var data = results;
 				visitors.each(function(){
-					var url = $(this).attr('id').trim();					
+					var url = $(this).attr('id').trim();
 					for (var i = 0; i < data.length; i++) {
 						var object = data[i];
 						var content = object.get('time');
@@ -32,7 +37,7 @@ function showTime(Counter) {
 						}
 					}
 				})
-				
+
 			},
 			error: function(object, error) {
 				console.log("Error: " + error.code + " " + error.message);
@@ -90,6 +95,6 @@ $(function() {
 	} else {
 		showTime(Counter);
 	}
-}); 
+});
 </script>
 <% } %>
