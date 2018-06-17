@@ -9,7 +9,7 @@
  */
 
 /**
- * 
+ *
  */
 
 /* Mixins */
@@ -8577,7 +8577,7 @@ body.okayNav-loaded {
   }
 
   .footer .copyright {
-    display: none;
+    /*display: none;*/
   }
 }
 
