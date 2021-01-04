@@ -5,7 +5,7 @@ A brand new default theme for [[Hexo](https://hexo.io)].
 [English documentation](README.md) |
 [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
-![](doc/images/dawn.png)
+![](_doc/images/dawn.png)
 
 ## 特色
 
@@ -16,13 +16,13 @@ A brand new default theme for [[Hexo](https://hexo.io)].
 
 ## 主题颜色
 
-![](doc/images/dawn-theme-black.png)
+![](_doc/images/dawn-theme-black.png)
 
-![](doc/images/dawn-theme-blue.png)
+![](_doc/images/dawn-theme-blue.png)
 
-![](doc/images/dawn-theme-green.png)
+![](_doc/images/dawn-theme-green.png)
 
-![](doc/images/dawn-theme-purple.png)
+![](_doc/images/dawn-theme-purple.png)
 
 ## 页面展示
 

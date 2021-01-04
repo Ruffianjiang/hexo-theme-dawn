@@ -3,7 +3,7 @@
 A brand new default theme for [[Hexo](https://hexo.io)].  
 [Preview](http://Ruffianjiang.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
-![](doc/images/dawn.png)
+![](_doc/images/dawn.png)
 
 ## Features
 
@@ -15,13 +15,13 @@ A brand new default theme for [[Hexo](https://hexo.io)].
 
 ## Skins
 
-![](doc/images/dawn-theme-black.png)
+![](_doc/images/dawn-theme-black.png)
 
-![](doc/images/dawn-theme-blue.png)
+![](_doc/images/dawn-theme-blue.png)
 
-![](doc/images/dawn-theme-green.png)
+![](_doc/images/dawn-theme-green.png)
 
-![](doc/images/dawn-theme-purple.png)
+![](_doc/images/dawn-theme-purple.png)
 
 ## Appearance
 

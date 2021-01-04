@@ -1,10 +1,47 @@
 {
   "name": "hexo-theme-dawn",
   "version": "2.0.0",
-  "private": true,
-  "devDependencies": {},
+  "description": "Elegant and powerful theme for Hexo.",
+  "main": "package.json",
+  "scripts": {
+    "eslint": "eslint scripts/ source/js test/",
+    "stylint": "stylint source/css/",
+    "test": "mocha test/index.js"
+  },
+  "repository": "Ruffianjiang/hexo-theme-dawn",
+  "keywords": [
+    "hexo",
+    "theme",
+    "dawn"
+  ],
+  "author": "Ruffianjiang <jiangyj0516@outlook.com> (https://github.com/Ruffianjiang)",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Ruffianjiang/hexo-theme-dawn/issues"
+  },
+  "homepage": "https://github.com/Ruffianjiang/hexo-theme-dawn",
+  "devDependencies": {
+    "eslint-config-hexo": "^4.1.0"
+  },
   "dependencies": {
+    "chai": "4.2.0",
+    "element-ui": "^2.14.1",
+    "eslint": "7.14.0",
+    "hexo": "5.2.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "3.3.0",
+    "husky": "4.3.0",
+    "js-yaml": "3.14.0",
     "lodash": "^4.17.20",
+    "mocha": "8.2.1",
+    "stylint": "2.0.0",
+    "swig": "^1.4.2",
+    "swig-templates": "^2.0.3",
     "update": "^0.7.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint && npm test"
+    }
   }
 }
