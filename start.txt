@@ -1,0 +1,6 @@
+hexo clean & hexo generate & hexo serve
+
+
+hexo bangumi -u & hexo clean & hexo generate & hexo serve
+
+

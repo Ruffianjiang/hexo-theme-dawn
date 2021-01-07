@@ -92,6 +92,17 @@ npm install hexo-generator-sitemap --save
 ```
 npm install hexo-generator-baidu-sitemap --save
 ```
+
+### [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
+
+```
+npm install hexo-bilibili-bangumi --save
+更新数据命令:hexo bangumi -u
+删除数据命令:hexo bangumi -d
+```
+
+
+
 ## 主题配置
 
 ### 设置语言

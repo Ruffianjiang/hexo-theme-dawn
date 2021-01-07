@@ -1,5 +1,5 @@
 ---
-title: archive  
+title: archives  
 layout: menu-archives  
 comments: false  
 ---
