@@ -34,6 +34,7 @@
     "js-yaml": "3.14.0",
     "lodash": "^4.17.20",
     "mocha": "8.2.1",
+    "set-value": ">=2.0.1",
     "stylint": "2.0.0",
     "swig": "^1.4.2",
     "swig-templates": "^2.0.3",
