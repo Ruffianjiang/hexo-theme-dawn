@@ -1,9 +1,6 @@
 <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
     <%- partial('social', null, {cache: !config.relative_link}) %>
     <div class="copyright">
-        <% if(theme.site.coding) { %>
-            <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
-        <% } %>
         <% if(theme.site.copyright) { %>
             &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <% } %>

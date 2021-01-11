@@ -233,3 +233,10 @@ profile:
   # My Personal Projects
   projects:
     Ruffianjiang/hexo-theme-dawn: https://github.com/Ruffianjiang/hexo-theme-dawn
+
+# github角标[https://tholman.com/github-corners/?spm=a2c4e.11153940.blogcont362865.19.7ad64508EPW4EO#]
+github-corners:
+  enable: true
+  url: https://github.com/Ruffianjiang
+  position: right # right left
+

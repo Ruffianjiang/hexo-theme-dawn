@@ -19,5 +19,6 @@ bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 <%- body %>
 <%- partial('home-left-footer', null, {cache: !config.relative_link}) %>
 <%- partial('_common/script', {post: page}) %>
+<%- partial('_partial/github-corners', null, {cache: !config.relative_link}) %>
 </body>
 </html>

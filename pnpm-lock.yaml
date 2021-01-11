@@ -1,4 +1,5 @@
 dependencies:
+  axios: 0.21.1
   chai: 4.2.0
   element-ui: 2.14.1
   hexo: 5.2.0
@@ -7,6 +8,7 @@ dependencies:
   hexo-generator-archive: 1.0.0
   hexo-generator-category: 1.0.0
   hexo-generator-index: 2.0.0
+  hexo-generator-sitemap: 2.1.0
   hexo-generator-tag: 1.0.0
   hexo-renderer-ejs: 1.0.0
   hexo-renderer-marked: 3.3.0
@@ -895,6 +897,13 @@ packages:
     resolution:
       integrity: sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
       tarball: 'https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz'
+  /axios/0.21.1:
+    dependencies:
+      follow-redirects: 1.13.1
+    dev: false
+    resolution:
+      integrity: sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
+      tarball: 'https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz'
   /babel-helper-vue-jsx-merge-props/2.0.3:
     dev: false
     resolution:
@@ -1656,7 +1665,7 @@ packages:
       fsevents: 2.3.1
     resolution:
       integrity: sha1-RYpIFqQV6dOzyqT67CuWppNanmU=
-      tarball: 'https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.0.tgz'
+      tarball: 'https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.0.tgz?cache=0&sync_timestamp=1609940998466&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.0.tgz'
   /ci-info/2.0.0:
     dev: false
     resolution:
@@ -3261,6 +3270,13 @@ packages:
     resolution:
       integrity: sha1-pdBrSosB46Y3cdqly3oZA+LlcGc=
       tarball: 'https://registry.npm.taobao.org/flatted/download/flatted-3.1.0.tgz'
+  /follow-redirects/1.13.1:
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha1-X2m4Ezds7k/QR0o6uoNd8Eq3Y7c=
+      tarball: 'https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.1.tgz'
   /follow-redirects/1.5.10:
     dependencies:
       debug: 3.1.0
@@ -3916,6 +3932,17 @@ packages:
     resolution:
       integrity: sha1-FecfTSjunSFy4td+jR26BIgu3I8=
       tarball: 'https://registry.npm.taobao.org/hexo-generator-index/download/hexo-generator-index-2.0.0.tgz'
+  /hexo-generator-sitemap/2.1.0:
+    dependencies:
+      hexo-util: 2.4.0
+      micromatch: 4.0.2
+      nunjucks: 3.2.2
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    resolution:
+      integrity: sha1-79k4BJ3b+alhoHf8xZR5GLpbITo=
+      tarball: 'https://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-2.1.0.tgz'
   /hexo-generator-tag/1.0.0:
     dependencies:
       hexo-pagination: 1.0.0
@@ -8740,6 +8767,7 @@ packages:
       integrity: sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
       tarball: 'https://registry.npm.taobao.org/yocto-queue/download/yocto-queue-0.1.0.tgz'
 specifiers:
+  axios: '>=0.21.1'
   chai: 4.2.0
   element-ui: ^2.14.1
   eslint: ^7.17.0
@@ -8752,6 +8780,7 @@ specifiers:
   hexo-generator-archive: ^1.0.0
   hexo-generator-category: ^1.0.0
   hexo-generator-index: ^2.0.0
+  hexo-generator-sitemap: ^2.1.0
   hexo-generator-tag: ^1.0.0
   hexo-renderer-ejs: ^1.0.0
   hexo-renderer-marked: ^3.0.0
