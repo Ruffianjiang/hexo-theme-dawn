@@ -20,16 +20,9 @@
     "url": "https://github.com/Ruffianjiang/hexo-theme-dawn/issues"
   },
   "homepage": "https://github.com/Ruffianjiang/hexo-theme-dawn",
-  "devDependencies": {
-    "eslint": "^7.17.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-hexo": "^4.1.0",
-    "eslint-plugin-react": "^7.22.0"
-  },
   "dependencies": {
     "axios": ">=0.21.1",
     "chai": "4.2.0",
-    "element-ui": "^2.14.1",
     "hexo": "5.2.0",
     "husky": "4.3.0",
     "js-yaml": "3.14.0",
