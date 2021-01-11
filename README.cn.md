@@ -1,59 +1,69 @@
-# pure
+# dawn
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [English documentation](README.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
+A brand new default theme for [[Hexo](https://hexo.io)].  
+[Preview](http://Ruffianjiang.github.io/) |
+[English documentation](README.md) |
+[iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
-![](screenshot/pure.png)
+![](_doc/images/dawn.png)
 
 ## 特色
 
 - 多语言
-- 第三方评论框（友言、来必力、gitment）
-- 可展示个人豆瓣书单
+- 第三方评论框（友言、来必力、gitment、gitalk）
 - 可展示个人github托管项目
 - 可设置支付宝、微信打赏
 
 ## 主题颜色
 
-![](screenshot/pure-theme-black.png)
+![](_doc/images/dawn-theme-black.png)
 
-![](screenshot/pure-theme-blue.png)
+![](_doc/images/dawn-theme-blue.png)
 
-![](screenshot/pure-theme-green.png)
+![](_doc/images/dawn-theme-green.png)
 
-![](screenshot/pure-theme-purple.png)
+![](_doc/images/dawn-theme-purple.png)
 
 ## 页面展示
 
-[首页](http://cofess.github.io/) | [归档](http://cofess.github.io/archives/) | [分类](http://cofess.github.io/categories/) | [标签](http://cofess.github.io/tags/) | [项目](http://cofess.github.io/repository/) | [书单](http://cofess.github.io/books/) | [友链](http://cofess.github.io/links/) | [关于](http://cofess.github.io/about/)
+[首页](http://Ruffianjiang.github.io/) |
+[归档](http://Ruffianjiang.github.io/archives/) |
+[分类](http://Ruffianjiang.github.io/categories/) |
+[标签](http://Ruffianjiang.github.io/tags/) |
+[项目](http://Ruffianjiang.github.io/repository/) |
+[友链](http://Ruffianjiang.github.io/links/) |
+[关于](http://Ruffianjiang.github.io/about/)
 
-## 配置说明
+## 快速开始
+> 在 Hexo中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件。
 
-在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件
-
-## 安装主题
-
+第一步、站点根目录下执行如下命令，下载主题
+```shell
+git clone https://github.com/Ruffianjiang/hexo-theme-dawn.git themes/dawn
 ```
-git clone https://github.com/cofess/hexo-theme-pure.git themes/pure
-```
-## 更新主题
 
-```
-cd themes/pure
+需要更新时，使用如下命令
+```shell
+cd themes/dawn
 git pull
 ```
-## 启用pure主题
 
-打开站点配置文件，找到theme字段，将其值更改为 pure
+第二步、主题目录下配置文件`_config.yml`复制一份到站点目录下，重命名为`_config.dawn.yml`  
+> `_config.yml`和`_config.dawn.yml.light`内容一致，为轻量配置，开箱即用，建议初次安装使用此配置，`_config.dawn.yml.all`为全部配置，需要安装一些插件，推荐部署好站点后，需要定制插件时，作为参考使用
 
-```
-theme: pure
+第三步、打开站点目录下的配置文件`_config.yml`，找到`theme`字段，将其值更改为`dawn`
+```yaml
+theme: dawn
 ```
 
-到此，主题安装完成。然后启动Hexo服务验证主题是否正确启用。
+第四步、编译并启动
+```shell
+hexo clean & hexo generate & hexo serve
+```
 
-```
-hexo s
-```
+访问`localhost:4000`现在来看看你的博客吧~~
+
+其他定制功能，请访问 [wiki](https://github.com/Ruffianjiang/hexo-theme-dawn/wiki)
 
 ## 安装插件
 
@@ -82,11 +92,22 @@ npm install hexo-generator-sitemap --save
 ```
 npm install hexo-generator-baidu-sitemap --save
 ```
+
+### [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
+
+```
+npm install hexo-bilibili-bangumi --save
+更新数据命令:hexo bangumi -u
+删除数据命令:hexo bangumi -d
+```
+
+
+
 ## 主题配置
 
 ### 设置语言
 
-打开站点配置文件, 将 language 设置成你所需要的语言。建议明确设置你所需要的语言,可选值对应themes\pure\languages目录下语言文件，简体中文配置如下：
+打开站点配置文件, 将 language 设置成你所需要的语言。建议明确设置你所需要的语言,可选值对应themes\dawn\languages目录下语言文件，简体中文配置如下：
 
 ```
 language: zh-CN
@@ -132,7 +153,7 @@ menu_icons:
 ### 设置个人信息
 
 ```
-头像在themes\pure\source\images 目录下替换图片即可，捐献的二维码同理。
+头像在themes\dawn\source\images 目录下替换图片即可，捐献的二维码同理。
 
 个人信息大部分都在 主题配置文件 中设置
 ```
@@ -164,7 +185,7 @@ share:
 
 ### 评论
 
-主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)评论系统，选择其中一种即可
+主题集成了[disqus](https://disqus.com/) 、[友言](http://www.uyan.cc/) 、[来必力](https://livere.com/) 、[gitment](https://github.com/imsun/gitment) 、[gitalk](https://github.com/gitalk/gitalk) 评论系统，选择其中一种即可
 
 ```
 # Comment
@@ -201,7 +222,7 @@ pv:
 
 ### Github respostory
 
-复制`theme/pure/_source/` 目录下`repository`文件夹到`blog path/source/` 目录下
+复制`theme/dawn/_source/` 目录下`repository`文件夹到`blog path/source/` 目录下
 
 ```
 # Github
@@ -211,7 +232,7 @@ github:
 
 ### 豆瓣书单
 
-复制`theme/pure/_source/` 目录下`books`文件夹到`blog path/source/` 目录下
+复制`theme/dawn/_source/` 目录下`books`文件夹到`blog path/source/` 目录下
 
 ```
 # douban 豆瓣书单
@@ -223,7 +244,7 @@ douban:
 
 ### 友情链接
 
-复制`theme/pure/_source/` 目录下`links`文件夹到`blog path/source/` 目录下
+复制`theme/dawn/_source/` 目录下`links`文件夹到`blog path/source/` 目录下
 
 在 hexo 目录下的 source 文件夹内创建一个名为 _data（禁止改名）的文件夹。
 
@@ -374,7 +395,7 @@ markdown_it_plus:
 
 ### 文章启用mathjax
 
-```
+```markdown
 title: Hello World
 mathjax: true
 ```

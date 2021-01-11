@@ -1,8 +1,9 @@
-# pure
+# dawn
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
+A brand new default theme for [[Hexo](https://hexo.io)].  
+[Preview](http://Ruffianjiang.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
-![](screenshot/pure.png)
+![](_doc/images/dawn.png)
 
 ## Features
 
@@ -14,35 +15,58 @@ A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofes
 
 ## Skins
 
-![](screenshot/pure-theme-black.png)
+![](_doc/images/dawn-theme-black.png)
 
-![](screenshot/pure-theme-blue.png)
+![](_doc/images/dawn-theme-blue.png)
 
-![](screenshot/pure-theme-green.png)
+![](_doc/images/dawn-theme-green.png)
 
-![](screenshot/pure-theme-purple.png)
+![](_doc/images/dawn-theme-purple.png)
 
 ## Appearance
 
-[Home](http://cofess.github.io/) | [Archives](http://cofess.github.io/archives/) | [Categories](http://cofess.github.io/categories/) | [Tags](http://cofess.github.io/tags/) | [Repository](http://cofess.github.io/repository/) | [Books](http://cofess.github.io/books/) | [Links](http://cofess.github.io/links/) | [About](http://cofess.github.io/about/)
+[Home](http://Ruffianjiang.github.io/) |
+[Archives](http://Ruffianjiang.github.io/archives/) |
+[Categories](http://Ruffianjiang.github.io/categories/) |
+[Tags](http://Ruffianjiang.github.io/tags/) |
+[Repository](http://Ruffianjiang.github.io/repository/) |
+[Books](http://Ruffianjiang.github.io/books/) |
+[Links](http://Ruffianjiang.github.io/links/) |
+[About](http://Ruffianjiang.github.io/about/)
 
-## Install theme
+## Quick start
+> 在 Hexo中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件。
 
-Execute the following command under your `hexo` folder.
-
+第一步、站点根目录下执行如下命令，下载主题
+```shell
+git clone https://github.com/Ruffianjiang/hexo-theme-dawn.git themes/dawn
 ```
-git clone https://github.com/cofess/hexo-theme-pure.git themes/pure
-```
-Then modify the property `theme` of the file `hexo/_config.yml`  to `theme: pure`
 
-## Update theme
-
-Execute the following command to update theme.
-
-```
-cd themes/pure
+需要更新时，使用如下命令
+```shell
+cd themes/dawn
 git pull
 ```
+
+第二步、主题目录下配置文件`_config.yml`复制一份到站点目录下，重命名为`_config.dawn.yml`
+> `_config.yml`和`_config.dawn.yml.light`内容一致，为轻量配置，开箱即用，建议初次安装使用此配置，`_config.dawn.yml.all`为全部配置，需要安装一些插件，推荐部署好站点后，需要定制插件时，作为参考使用
+
+第三步、打开站点目录下的配置文件`_config.yml`，找到`theme`字段，将其值更改为`dawn`
+```yaml
+theme: dawn
+```
+
+第四步、编译并启动
+```shell
+hexo clean & hexo generate & hexo serve
+```
+
+访问`localhost:4000`现在来看看你的博客吧~~
+
+其他定制功能，请访问 [wiki](https://github.com/Ruffianjiang/hexo-theme-dawn/wiki)
+
+
+
 ## Install plugin
 
 ### [hexo-wordcount](https://github.com/willin/hexo-wordcount)

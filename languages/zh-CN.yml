@@ -5,6 +5,19 @@ menu:
   plugins: 插件
   themes: 主题
   search: 搜索
+  Home: 首页
+  Archives: 归档
+  Categories: 分类
+  Tags: 标签
+  Repository: 仓库
+  Bilibili: B站
+  Links: 友链
+  About: 关于
+
+nav:
+  all: All
+  older: Older
+  newer: Newer
 
 index:
   get_started: 开始使用
@@ -67,3 +80,14 @@ sidebar:
     processor: 处理器 (Processor)
     renderer: 渲染引擎 (Renderer)
     tag: 标签 (Tag)
+
+unit:
+  word: words
+  time: minutes
+article:
+  wordcount: Word Count
+  readcount: Read Count
+  more: Read More
+  comments: Comments
+  share: Share
+  catalogue: Catalogue
