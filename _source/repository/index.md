@@ -1,6 +1,6 @@
 ---
 title: repository  
-layout: menu-repository  
+layout: _menu/repository  
 comments: false  
 sidebar: none  
 ---

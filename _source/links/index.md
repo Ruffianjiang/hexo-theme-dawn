@@ -1,6 +1,6 @@
 ---
 title: links  
-layout: menu-links  
+layout: _menu/links  
 comments: true  
 sidebar: none  
 ---
