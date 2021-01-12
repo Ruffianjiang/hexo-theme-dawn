@@ -15,9 +15,9 @@ menu:
   About: 关于
 
 nav:
-  all: All
-  older: Older
-  newer: Newer
+  all: 全部
+  older: 上一篇
+  newer: 下一篇
 
 index:
   get_started: 开始使用
@@ -82,12 +82,12 @@ sidebar:
     tag: 标签 (Tag)
 
 unit:
-  word: words
-  time: minutes
+  word: 字
+  time: 分钟
 article:
-  wordcount: Word Count
-  readcount: Read Count
-  more: Read More
-  comments: Comments
-  share: Share
-  catalogue: Catalogue
+  wordcount: 字数统计
+  readcount: 阅读统计
+  more: 阅读更多
+  comments: 评论
+  share: 分享
+  catalogue: 菜单

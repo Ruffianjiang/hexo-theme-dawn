@@ -1,9 +1,14 @@
-<% if (!index && theme.config.toc && post.toc) { %>
+<% if (!index && theme.config.toc && !post.toc) { %>
     <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
         <div class="slimContent">
             <nav id="toc" class="article-toc">
                 <h3 class="toc-title"><%= __('article.catalogue') %></h3>
-                <%- toc(post.content) %>
+                <%- toc(post.content, {
+                    class: 'toc',
+                    list_number: false,
+                    max_depth: 6,
+                    min_depth: 1,
+                }) %>
             </nav>
         </div>
     </aside>

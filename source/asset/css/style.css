@@ -6091,7 +6091,7 @@ body.no-sidebar .sidebar {
 }
 
 .sidebar-toc.collapse {
-  display: none !important;
+  /*display: none !important;*/
 }
 
 .sidebar-toc.in {
