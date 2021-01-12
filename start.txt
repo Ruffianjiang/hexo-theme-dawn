@@ -1,7 +1,5 @@
 hexo clean & hexo generate & hexo serve
-
+hexo clean & hexo generate & hexo deploy
 
 hexo bangumi -u & hexo clean & hexo generate & hexo serve
-
-
-hexo clean & hexo generate & hexo deploy
+hexo bangumi -u & hexo clean & hexo generate & hexo deploy
