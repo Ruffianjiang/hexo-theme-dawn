@@ -1,6 +1,6 @@
 ---
-title: Repositories
-layout: menu-repository
-comments: false
-sidebar: none
+title: repository  
+layout: _menu/repository  
+comments: false  
+sidebar: none  
 ---

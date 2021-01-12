@@ -39,6 +39,7 @@
         fb_admins: theme.fb_admins,
         fb_app_id: theme.fb_app_id
     }) %>
+
     <!-- Canonical links -->
     <link rel="canonical" href="<%- url %>">
     <% if (theme.rss){ %>
@@ -47,8 +48,8 @@
     <% if (theme.site.favicon){ %>
         <link rel="icon" href="<%- theme.site.favicon %>" type="image/x-icon">
     <% } %>
-    <%- css('css/style') %>
-    <%- css('css/system-icon') %>
+    <%- css('asset/css/style') %>
+    <%- css('asset/css/system-icon') %>
     <% if (page.mathjax) { %>
         <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
     <% } %>

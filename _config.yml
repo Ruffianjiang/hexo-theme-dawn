@@ -1,0 +1,278 @@
+# menu
+menu:
+#  Home: .
+#  Archives: archives  # 归档
+#  Categories: categories  # 分类
+#  Tags: tags  # 标签
+#  Repository: repository  # github repositories
+#  Links: links  # 友链
+#  About: abouts  # 关于
+
+# http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html
+# Enable/Disable menu icons
+menu_icons:
+  enable: true  # 是否启用导航菜单图标
+  home: icon-home-fill
+  archives: icon-archives-fill
+  categories: icon-folder
+  tags: icon-tags
+  repository: icon-project
+  links: icon-friendship
+  about: icon-cup-fill
+
+# rss
+rss: /atom.xml
+
+# abbrlink config
+abbrlink:
+  alg: crc16 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
+
+# Site
+site:
+  logo:
+    enabled: true
+    width: 40
+    height: 40
+    url: images/logo.png
+  title: Hexo # 页面title
+  favicon: /favicon.ico
+  board: <p><img src="/asset/images/board/board.jpg"></p> <a href="https://www.aliyun.com/minisite/goods?userCode=2txxbkg6" target="view_window" style="color:red;">阿里云专属优惠</a> # 站点公告
+  copyright: true # 底部版权信息
+  coding: false # 是否展示coding标识，用于coding的审核
+
+# config
+config:
+  skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
+  layout: main-center # 布局方式 main-left main-center main-right
+  toc: true # 是否开启文章章节目录导航
+  menu_highlight: true # 是否开启当前菜单高亮显示
+  thumbnail: true # enable posts thumbnail, options: true, false
+  excerpt_link: Read More
+
+# Pagination
+pagination:
+  number: true
+  prev:
+    alwayShow: true
+  next:
+    alwayShow: true
+
+# Sidebar
+sidebar:
+  enable: true
+  widgets:
+    - board
+    - category
+    - tag
+    - tagcloud
+    - archive
+    - recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+  - category
+  - tagcloud
+  - archive
+
+# widget behavior
+archive_type: 'monthly' #'monthly'
+show_count: true
+
+# Fancybox
+fancybox: true
+
+# _hmt 百度统计
+baiduHmt: false
+
+# Search
+search:
+  insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+  baidu: false # you need to disable other search engines to use Baidu search
+
+# Donate
+donate:
+  enable: true
+  # 微信打赏
+  wechatpay:
+    qrcode: images/donate/wechatpayimg.png
+    title: 微信支付
+  # 支付宝打赏
+  alipay:
+    qrcode: images/donate/alipayimg.png
+    title: 支付宝
+
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: true  # 是否启用分享
+  sites: weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin  # PC端显示的分享图标
+  mobile_sites: weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin  # 移动端显示的分享图标
+
+# Github
+github:
+  username: Ruffianjiang  # github username
+
+# Comment
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+comment:
+  type: livere # 启用哪种评论系统
+  disqus:  # enter disqus shortname here
+  youyan:
+    uid:  # enter youyan uid
+  livere:
+    uid:  # enter youyan uid
+  gitment:
+    githubID:
+    repo:
+    ClientID:
+    ClientSecret:
+    lazy: true
+  gitalk: # gitalk. https://gitalk.github.io/
+    owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin:  #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo:  #必须. GitHub repository.
+    ClientID:  #必须. GitHub Application Client ID.
+    ClientSecret:  #必须. GitHub Application Client Secret.
+  valine: # Valine. https://valine.js.org
+    appid:  # your leancloud application appid
+    appkey:  # your leancloud application appkey
+    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # comment box placeholder
+    avatar: mm # gravatar style
+    meta: nick,mail,link # custom comment header
+    pageSize: 10 # pagination size
+    visitor: false # Article reading statistic https://valine.js.org/visitor.html
+
+# PV
+pv:
+  busuanzi:
+    enable: true  # 不蒜子统计
+  cnzz:
+    enable: false  # cnzz统计
+    web_id:  # cnzz id
+  leancloud:
+    enable: false  # leancloud统计,网站需备案
+    app_id:  # leancloud <AppID>
+    app_key:  # leancloud <AppKey>
+
+# 首页文章列表超长省略
+# Automatically Excerpt. Not recommand.
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 150
+
+# wordcount
+postCount:
+  enable: false
+  wordcount: true  # 文章字数统计
+  min2read: true  # 阅读时长预计
+
+# Plugins
+plugins:
+  google_analytics:  # enter the tracking ID for your Google Analytics
+  google_site_verification:  # enter Google site verification code
+  baidu_analytics:  # enter Baidu Analytics hash key
+  tencent_analytics:
+
+# Miscellaneous
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+
+# hexo-neat 压缩
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+
+# 翻译
+translate_title:
+  translate_way: baidu    #google | baidu | youdao
+  youdao_api_key: XXX
+  youdao_keyfrom: XXX
+  is_need_proxy: false     #true | false
+  proxy_url: http://localhost:8123
+  baidu_appid: '' # Your baidu_appid
+  baidu_appkey: '' # Your baidu_appkey
+
+# markdown渲染
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+    - plugin:
+        name: markdown-it-mark
+        enable: true
+
+version: 1.0.0
+
+# profile 个人页-关于
+profile:
+  enabled: true # Whether to show profile bar
+  avatar: asset/images/avatar.png
+  gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+  author: 遗失的拂晓
+  author_title: JAVA Developer
+  author_description: 个人简介
+  location: Shanghai, China
+  follow: https://github.com/Ruffianjiang
+  # Social Links
+  social:
+    links:
+      github: https://github.com/Ruffianjiang
+      weibo: http://weibo.com/lossingdawnn
+      # twitter: https://twitter.com/iwebued
+      # facebook: /
+      # dribbble: /
+      # behance: https://www.behance.net/cofess
+      rss: atom.xml
+    link_tooltip: true # enable the social link tooltip, options: true, false
+  # My Skills
+  skills:
+    Git: ★★★☆☆
+    Gulp: ★★★☆☆
+  # My Personal Links
+  links:
+    Github: https://github.com/Ruffianjiang
+    Blog: http://www.cnblogs.com/lossingdawn/
+    # 微博: http://weibo.com/cofess
+    # 花瓣: http://huaban.com/cofess
+    # Behance: https://www.behance.net/cofess
+  # My Personal Labels
+  labels:
+    - 前端
+    - 前端开发
+  # My Personal Works
+  works:
+    name:
+      link: http://www.cnblogs.com/lossingdawn/
+      date: 2016
+  # My Personal Projects
+  projects:
+    Ruffianjiang/hexo-theme-dawn: https://github.com/Ruffianjiang/hexo-theme-dawn

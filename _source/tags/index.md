@@ -1,5 +1,5 @@
 ---
-title: tags
-layout: menu-tags
-comments: false
+title: tag  
+layout: _menu/tags  
+comments: false  
 ---

@@ -67,7 +67,7 @@ $(function() {
     for (var i = 0, length = $menuList.length; i < length; i++) {
       var itemHref = $($menuList[i]).find('a').attr('href');
       if (currentPathname.indexOf(itemHref) > -1 ||
-        (currentPathname === '/' && (itemHref === '/.' || itemHref === '/' || itemHref === 'index.html' || itemHref === '/index.html'))) {
+        (currentPathname === '/' && (itemHref === '/.' || itemHref === '/' || itemHref === 'index.md' || itemHref === '/index.md'))) {
         activeIndex = i;
       }
       $($menuList[i]).removeClass('active');

@@ -1,5 +1,5 @@
 ---
-title: archives
-layout: menu-archives
-comments: false
+title: archive  
+layout: _menu/archives  
+comments: false  
 ---

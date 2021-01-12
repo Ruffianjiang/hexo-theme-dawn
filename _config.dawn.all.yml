@@ -7,7 +7,7 @@ menu:
   Repository: repository  # github repositories
   Books: books  # 豆瓣书单
   Links: links  # 友链
-  About: about  # 关于
+  About: abouts  # 关于
 
 # Enable/Disable menu icons
 menu_icons:
@@ -30,7 +30,7 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: ../images/logo.png
+    url: ../asset/images/logo.png
   title: Hexo # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
@@ -48,7 +48,7 @@ config:
 # Pagination
 pagination:
   number: false
-  prev: 
+  prev:
     alwayShow: true
   next:
     alwayShow: true
@@ -56,7 +56,7 @@ pagination:
 # Sidebar
 sidebar: right
 widgets:
-  - board  
+  - board
   - category
   - tag
   - tagcloud
@@ -67,7 +67,7 @@ widgets:
 index_widgets:
 # - category
 # - tagcloud
-# - archive  
+# - archive
 
 # widget behavior
 archive_type: 'monthly'
@@ -89,8 +89,8 @@ donate:
     qrcode: images/donate/wechatpayimg.png
     title: 微信支付
   # 支付宝打赏
-  alipay: 
-    qrcode: images/donate/alipayimg.png 
+  alipay:
+    qrcode: images/donate/alipayimg.png
     title: 支付宝
 
 # Share
@@ -101,8 +101,8 @@ share:
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
-github: 
-  username: ***
+github:
+  username: *
 
 # Comment
 # Gitment
@@ -110,15 +110,15 @@ github:
 comment:
   type: youyan
   disqus: # enter disqus shortname here
-  youyan: 
-    uid: 1783844 # enter youyan uid 
+  youyan:
+    uid: 1783844 # enter youyan uid
   livere:
-    uid: # enter youyan uid 
+    uid: # enter youyan uid
   gitment:
-    githubID: 
-    repo: 
-    ClientID: 
-    ClientSecret: 
+    githubID:
+    repo:
+    ClientID:
+    ClientSecret:
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
     owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
@@ -141,9 +141,9 @@ comment:
 # Api：
   # https://developers.douban.com/wiki/?title=book_v2 图书
   # https://developers.douban.com/wiki/?title=movie_v2 电影
-# books：  
+# books：
   # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
-# movies: 
+# movies:
   # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
   # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
@@ -152,7 +152,7 @@ douban:
   user: # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
-  
+
 # PV
 pv:
   busuanzi:
@@ -161,30 +161,30 @@ pv:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
-        
+
 # wordcount
 postCount:
   enable: false
   wordcount: true  # 文章字数统计
-  min2read: true  # 阅读时长预计 
+  min2read: true  # 阅读时长预计
 
 # Plugins
 plugins:
   google_analytics: # enter the tracking ID for your Google Analytics
   google_site_verification: # enter Google site verification code
   baidu_analytics: # enter Baidu Analytics hash key
-  tencent_analytics: 
-  
+  tencent_analytics:
+
 # Miscellaneous
 twitter:
 google_plus:
 fb_admins:
-fb_app_id:  
-  
+fb_app_id:
+
 # profile
 profile:
   enabled: true # Whether to show profile bar
-  avatar: images/avatar.png
+  avatar: asset/images/avatar.png
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 昵称
   author_title: Web Developer & Designer
@@ -202,7 +202,7 @@ profile:
       behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
-  # My Skills 
+  # My Skills
   skills:
     Git: ★★★☆☆
     Gulp: ★★★☆☆
@@ -233,3 +233,10 @@ profile:
   # My Personal Projects
   projects:
     Ruffianjiang/hexo-theme-dawn: https://github.com/Ruffianjiang/hexo-theme-dawn
+
+# github角标[https://tholman.com/github-corners/?spm=a2c4e.11153940.blogcont362865.19.7ad64508EPW4EO#]
+github-corners:
+  enable: true
+  url: https://github.com/Ruffianjiang
+  position: right # right left
+

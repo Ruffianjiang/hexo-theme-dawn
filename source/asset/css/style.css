@@ -6091,7 +6091,7 @@ body.no-sidebar .sidebar {
 }
 
 .sidebar-toc.collapse {
-  display: none !important;
+  /*display: none !important;*/
 }
 
 .sidebar-toc.in {
@@ -6728,9 +6728,9 @@ body.okayNav-loaded {
 
 @font-face {
   font-family: "socialshare";
-  src: url("../fonts/iconfont.eot");
+  src: url("source/asset/fonts/iconfont.eot");
   /* IE9*/
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"),url("../fonts/iconfont.woff") format("woff"),url("../fonts/iconfont.ttf") format("truetype"),url("../fonts/iconfont.svg#iconfont") format("svg");
+  src: url("source/asset/fonts/iconfont.eot?#iefix") format("embedded-opentype"),url("source/asset/fonts/iconfont.woff") format("woff"),url("source/asset/fonts/iconfont.ttf") format("truetype"),url("source/asset/fonts/iconfont.svg#iconfont") format("svg");
 }
 
 .social-share {

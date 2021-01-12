@@ -1,0 +1,4 @@
+---
+title: bilibili  
+type: bangumis  
+---
