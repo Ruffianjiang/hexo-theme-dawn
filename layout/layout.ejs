@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <!-- 通用模板 -->
 <html<%= config.language ? " lang=" + typeof (config.language) == "string" ? config.language.substring(0, 2) : config.language[0] : "" %>>
-<%- partial('_link/head', {post: page}) %>
-
-
+<%- partial('_common/head', {post: page}) %>
 
 <%
 var bodyClass = 'main-center';
@@ -15,17 +13,37 @@ if (theme.config.skin) {
 }
 bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 %>
+
 <body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">
-<%- partial('home-left', null, {cache: !config.relative_link}) %>
-<% if (theme.sidebar.enable && (!page.sidebar || page.sidebar != 'none')){ %>
-    <%- partial('sidebar', null, {cache: !config.relative_link}) %>
-<% } %>
-<%- body %>
+<%#- partial('home-left', null, {cache: !config.relative_link}) %>
 
-<%- partial('_link/script', {post: page}) %>
+<%# if (theme.sidebar.enable && (!page.sidebar || page.sidebar != 'none')){ %>
+    <%#- partial('sidebar', null, {cache: !config.relative_link}) %>
+<%# } %>
 
-<%- partial('_partial/github-corners', null, {cache: !config.relative_link}) %>
+<section class="hero is-dark is-medium">
+    <%- partial('_partial/github-corners', null, {cache: !config.relative_link}) %>
 
-<%- partial('_page/footer', null, {cache: !config.relative_link}) %>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Medium title
+            </h1>
+            <h2 class="subtitle">
+                Medium subtitle
+            </h2>
+        </div>
+    </div>
+
+    <%- body %>
+
+
+    <%- partial('_page/footer', null, {cache: !config.relative_link}) %>
+</section>
+
+
+<%- partial('_common/script', {post: page}) %>
+
+
 </body>
 </html<%= config.language ? " lang=" + typeof (config.language) == "string" ? config.language.substring(0, 2) : config.language[0] : "" %>>

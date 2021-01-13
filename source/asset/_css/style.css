@@ -6082,7 +6082,7 @@ body.no-sidebar .sidebar {
 }
 
 .recent-post-list li .item-thumb .thumb .thumb-none {
-  background-image: url("../images/thumb-default.png");
+  background-image: url("source/asset/images/thumb-default.png");
   background-size: 100% 100%;
 }
 

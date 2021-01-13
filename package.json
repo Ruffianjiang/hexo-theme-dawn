@@ -9,7 +9,8 @@
     "test": "mocha test/index.js",
     "css-build": "node-sass --omit-source-map-url source/asset/sass/bulma-styles.scss source/asset/css/bulma-styles.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": "Ruffianjiang/hexo-theme-dawn",
   "keywords": [
@@ -27,7 +28,6 @@
     "axios": ">=0.21.1",
     "braces": ">=2.3.1",
     "chai": "4.2.0",
-    "gulp": "^4.0.2",
     "hexo": "5.2.0",
     "hexo-bilibili-bangumi": "^1.5.1",
     "hexo-deployer-git": "^2.1.0",
