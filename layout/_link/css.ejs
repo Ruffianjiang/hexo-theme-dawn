@@ -1,0 +1,28 @@
+
+
+
+<!-- bulma -->
+<link rel="stylesheet" href="asset/css/bulma-styles.scss">
+
+<link rel="canonical" href="<%- url %>">
+<% if (theme.rss){ %>
+    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+<% } %>
+<% if (theme.site.favicon){ %>
+    <link rel="icon" href="<%- theme.site.favicon %>" type="image/x-icon">
+<% } %>
+<%- css('asset/css/bulma-styles') %>
+<%- css('asset/css/style') %>
+<%- css('asset/css/system-icon') %>
+<% if (page.mathjax) { %>
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+<% } %>
+<% if (theme.comment.type === 'gitment' && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css">
+<% } %>
+<% if (theme.fancybox) { %>
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+<% } %>
+<% if (theme.comment.type === 'gitalk') { %>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+<% } %>

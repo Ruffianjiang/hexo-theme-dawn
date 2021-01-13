@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<!-- 通用模板 -->
 <html<%= config.language ? " lang=" + typeof (config.language) == "string" ? config.language.substring(0, 2) : config.language[0] : "" %>>
-<%- partial('_common/head', {post: page}) %>
+<%- partial('_link/head', {post: page}) %>
+
+
+
 <%
 var bodyClass = 'main-center';
 if (theme.config.layout) {
@@ -17,8 +21,11 @@ bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
     <%- partial('sidebar', null, {cache: !config.relative_link}) %>
 <% } %>
 <%- body %>
-<%- partial('home-left-footer', null, {cache: !config.relative_link}) %>
-<%- partial('_common/script', {post: page}) %>
+
+<%- partial('_link/script', {post: page}) %>
+
 <%- partial('_partial/github-corners', null, {cache: !config.relative_link}) %>
+
+<%- partial('_page/footer', null, {cache: !config.relative_link}) %>
 </body>
-</html>
+</html<%= config.language ? " lang=" + typeof (config.language) == "string" ? config.language.substring(0, 2) : config.language[0] : "" %>>

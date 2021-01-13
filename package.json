@@ -6,7 +6,10 @@
   "scripts": {
     "eslint": "eslint scripts/ source/asset/js test/",
     "stylint": "stylint source/css/",
-    "test": "mocha test/index.js"
+    "test": "mocha test/index.js",
+    "css-build": "node-sass --omit-source-map-url source/asset/sass/bulma-styles.scss source/asset/css/bulma-styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": "Ruffianjiang/hexo-theme-dawn",
   "keywords": [
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/Ruffianjiang/hexo-theme-dawn",
   "dependencies": {
     "axios": ">=0.21.1",
+    "braces": ">=2.3.1",
     "chai": "4.2.0",
     "gulp": "^4.0.2",
     "hexo": "5.2.0",
@@ -46,11 +50,16 @@
     "stylint": "2.0.0",
     "swig": "^1.4.2",
     "swig-templates": "^2.0.3",
-    "update": "^0.7.4"
+    "update": "^0.7.4",
+    "yargs-parser": ">=5.0.0-security.0"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run eslint && npm test"
     }
+  },
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "node-sass": "^5.0.0"
   }
 }
