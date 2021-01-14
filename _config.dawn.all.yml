@@ -234,9 +234,32 @@ profile:
   projects:
     Ruffianjiang/hexo-theme-dawn: https://github.com/Ruffianjiang/hexo-theme-dawn
 
-
-
-
+# menus
+menus:
+  Home:
+    url: .
+    icon: icon-home-fill
+  Tags: # 标签
+    url: tags
+    icon: icon-tags
+  Categories: # 分类
+    url: categories
+    icon: icon-folder
+  Archives:  # 归档
+    url: archives
+    icon: icon-archives-fill
+  Repository:
+    url: repository  # github repositories
+    icon: icon-project
+  Bilibili: # bangumis  # bilibili番剧页
+    url: bangumis
+    icon: icon-book-fill
+  Links:  # 友链
+    url: links
+    icon: icon-friendship
+  About:  # 关于
+    url: abouts
+    icon: icon-cup-fill
 
 post_list:
   read_more:
