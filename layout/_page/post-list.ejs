@@ -1,22 +1,50 @@
-<div class="media-content">
-    <% page.posts.each(function(post, i){ %>
-        <div class="content">
+<article class="media">
+    <div class="media-content">
+        <% page.posts.each(function(post, i){ %>
+            <article class="media">
+                <div class="media-content">
+                    <p><strong>
+                            <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+                        </strong>
+                    </p>
 
-            <p class="title is-3 is-spaced">
-                <a href="<%= url_for(post.path) %>"><%= post.title %></a>
-            </p>
+                    <p>
+                        <% if(theme.post_list && theme.post_list.read_more && theme.post_list.read_more.enable){ %>
+                            <%= truncate(strip_html(post.content),
+                                    {length: theme.post_list.read_more.lenght ? 300 : theme.post_list.read_more.length}) %>
+                        <% } else { %>
+                            <%= strip_html(post.excerpt) %>
+                        <% } %>
+                        <br>
+                        <a href="<%= url_for(post.path) %>"> readMore → </a>
+                    </p>
 
-            <p class="subtitle is-4">
-                <% if(theme.post_list && theme.post_list.read_more && theme.post_list.read_more.enable){ %>
-                    <%= truncate(strip_html(post.content),
-                            {length: theme.post_list.read_more.lenght?300:theme.post_list.read_more.length}) %>
-                <% } else { %>
-                    <%= strip_html(post.excerpt) %>
-                <% } %>
-                <a href="<%= url_for(post.path) %>"> readMore → </a>
-            </p>
+                    <p class="media-info">
+                    <small>
+                        <%= post.updated %> ·
+                        <%- list_categories(post.categories, {
+                            show_count: false,
+                            class: 'post-category',
+                            style: 'none',
+                            separator: ',',
+                            transform(str) {
+                                return str.toLowerCase();
+                            }
+                        }) %> ·
+                        <%- list_tags(post.tags, {
+                            show_count: false,
+                            class: 'post-tag',
+                            style: 'none',
+                            separator: ',',
+                            transform(str) {
+                                return str.toLowerCase();
+                            }
+                        }) %>
+                    </small>
+                    </p>
 
-            <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
-        </div>
-    <% }) %>
-</div>
+                </div>
+            </article>
+        <% }) %>
+    </div>
+</article>

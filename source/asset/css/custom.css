@@ -1,6 +1,21 @@
 .bd-snippet-preview {
   padding: 1.5rem; }
 
+.media .media {
+  border-top: none;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem; }
+
+.media + .media {
+  margin-top: 0rem;
+  padding-top: 0rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem; }
+
+.media .media-info {
+  text-align: end; }
+
 .tools {
   position: fixed;
   bottom: 20px;

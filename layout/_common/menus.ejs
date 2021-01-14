@@ -1,9 +1,19 @@
 
-<div class="tabs is-right bd-snippet-preview">
-    <ul>
-        <li class="is-active"><a>Pictures</a></li>
-        <li><a>Music</a></li>
-        <li><a>Videos</a></li>
-        <li><a>Documents</a></li>
+<div class="tabs is-right bd-snippet-preview" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <ul class="menu-highlight">
+
+
+        <% var index = 0; %>
+
+        <% for (var menu in theme.menus){ %>
+            <% var itemName = menu.toLowerCase(); %>
+            <li class="menu-item menu-item-<%= itemName %> <%if(index==0){%>is-active<%}%>">
+                <a href="<%- url_for(theme.menus[menu].url) %>">
+<!--                    <i class="icon <%#= theme.menus[menu].icon %>"></i>-->
+                    <span class="menu-title"><%= __('menu.'+menu) %></span>
+                </a>
+            </li>
+            <%index++%>
+        <% } %>
     </ul>
 </div>

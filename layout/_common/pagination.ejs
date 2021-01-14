@@ -6,7 +6,7 @@
 
     <div class="level-right">
         <% if (page.prev != 0) { %>
-            <a class="level-item" href="<%= url_for(page.prev_link)%>" title="<%= __('pagination.prev') %>">
+            <a class="level-item" href="<%= url_for(page.prev_link) %>" title="<%= __('pagination.prev') %>">
                 ← <%= __('pagination.prev') %>
             </a>
         <% } %>
@@ -17,7 +17,7 @@
             escape: false
         }) %>
         <% if (page.next != 0) { %>
-            <a class="level-item" href="<%= url_for(page.next_link)%>" title="<%= __('pagination.next') %>">
+            <a class="level-item" href="<%= url_for(page.next_link) %>" title="<%= __('pagination.next') %>">
                 <%= __('pagination.next') %> →
             </a>
         <% } %>
@@ -26,23 +26,28 @@
 
 
 <nav class="pagination is-centered is-small" role="navigation" aria-label="pagination">
-    <a class="pagination-previous">Previous</a>
-    <a class="pagination-next">Next page</a>
-    <%- paginator({
-        prev_text: '<i class="icon icon-angle-left"></i> ' + __('pagination.prev'),
-        next_text: __('pagination.next') + ' <i class="icon icon-angle-right"></i>',
-        prev_next: false,
-        escape: false
-    }) %>
-    <ul class="pagination-list">
-        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
-        <li><span class="pagination-ellipsis">&hellip;</span></li>
-        <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
-        <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
-        <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
-        <li><span class="pagination-ellipsis">&hellip;</span></li>
-        <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
-    </ul>
+    <% if (page.prev != 0) { %>
+        <a class="pagination-previous" href="<%= url_for(page.prev_link) %>" title="<%= __('pagination.prev') %>">Previous</a>
+    <% } else { %>
+        <div></div>
+    <% } %>
+    <% if (page.next != 0) { %>
+        <a class="pagination-next" href="<%= url_for(page.next_link) %>" title="<%= __('pagination.next') %>">Next
+            page</a>
+    <% } else { %>
+        <div></div>
+    <% } %>
+    <% if (page.prev != 0) { %>
+        <ul class="pagination-list">
+            <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+            <li><span class="pagination-ellipsis">&hellip;</span></li>
+            <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+            <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+            <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+            <li><span class="pagination-ellipsis">&hellip;</span></li>
+            <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+    <% } %>
 </nav>
 
 

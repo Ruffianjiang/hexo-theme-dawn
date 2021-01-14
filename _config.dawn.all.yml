@@ -234,8 +234,17 @@ profile:
   projects:
     Ruffianjiang/hexo-theme-dawn: https://github.com/Ruffianjiang/hexo-theme-dawn
 
+
+
+
+
+post_list:
+  read_more:
+    enable: true
+    length: 300
+
 # github角标[https://tholman.com/github-corners/?spm=a2c4e.11153940.blogcont362865.19.7ad64508EPW4EO#]
-github-corners:
+github_corners:
   enable: true
   url: https://github.com/Ruffianjiang
   position: right # right left
