@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 通用模板 -->
 <html<%= config.language ? " lang=" + typeof (config.language) == "string" ? config.language.substring(0, 2) : config.language[0] : "" %>>
-<%- partial('_common/head', {post: page}) %>
+<%- partial('_asset/head', {post: page}) %>
 
 <%
 var bodyClass = 'main-center';
@@ -14,35 +14,36 @@ if (theme.config.skin) {
 bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 %>
 
-<body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">
+<body class="<%= bodyClass %> is-small" itemscope itemtype="http://schema.org/WebPage">
 <%#- partial('home-left', null, {cache: !config.relative_link}) %>
 
 <%# if (theme.sidebar.enable && (!page.sidebar || page.sidebar != 'none')){ %>
     <%#- partial('sidebar', null, {cache: !config.relative_link}) %>
 <%# } %>
 
-<section class="hero is-dark is-medium">
-    <%- partial('_partial/github-corners', null, {cache: !config.relative_link}) %>
 
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Medium title
-            </h1>
-            <h2 class="subtitle">
-                Medium subtitle
-            </h2>
-        </div>
-    </div>
+
+<%- partial('_common/github-corners', null, {cache: !config.relative_link}) %>
+<%- partial('_common/widget-list', null, {cache: !config.relative_link}) %>
+<%- partial('_common/tools', null, {cache: !config.relative_link}) %>
+
+
+
+<div class="container is-white is-max-desktop">
+
+    <!-- menus -->
+    <%- partial('_common/menus', null, {cache: !config.relative_link}) %>
+
 
     <%- body %>
 
 
-    <%- partial('_page/footer', null, {cache: !config.relative_link}) %>
-</section>
+    <%- partial('_common/footer', null, {cache: !config.relative_link}) %>
+
+</div>
 
 
-<%- partial('_common/script', {post: page}) %>
+<%- partial('_asset/script', {post: page}) %>
 
 
 </body>

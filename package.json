@@ -7,7 +7,8 @@
     "eslint": "eslint scripts/ source/asset/js test/",
     "stylint": "stylint source/css/",
     "test": "mocha test/index.js",
-    "css-build": "node-sass --omit-source-map-url source/asset/sass/bulma-styles.scss source/asset/css/bulma-styles.css",
+    "css-build": "node-sass --omit-source-map-url source/asset/_sass/bulma-styles.scss source/asset/css/bulma-styles.css",
+    "css-build-custom": "node-sass --omit-source-map-url source/asset/_sass/custom.scss source/asset/css/custom.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
     "preinstall": "npx npm-force-resolutions"
@@ -28,6 +29,7 @@
     "axios": ">=0.21.1",
     "braces": ">=2.3.1",
     "chai": "4.2.0",
+    "css.gg": "^2.0.0",
     "hexo": "5.2.0",
     "hexo-bilibili-bangumi": "^1.5.1",
     "hexo-deployer-git": "^2.1.0",

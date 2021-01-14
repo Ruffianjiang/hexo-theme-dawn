@@ -1,22 +1,22 @@
 <div class="media-content">
-<% page.posts.each(function(post, i){ %>
-    <div class="content">
+    <% page.posts.each(function(post, i){ %>
+        <div class="content">
 
-        <p class="title is-3 is-spaced">
-            <a href="<%= url_for(post.path) %>"><%= post.title %></a>
-        </p>
+            <p class="title is-3 is-spaced">
+                <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+            </p>
 
-        <p class="subtitle is-4">
-            <% if(theme.post_list && theme.post_list.read_more && theme.post_list.read_more.enable){ %>
-                <%= truncate(strip_html(post.content),
-                        {length: theme.post_list.read_more.lenght?300:theme.post_list.read_more.length}) %>
-            <% } else { %>
-                <%= strip_html(post.excerpt) %>
-            <% } %>
-            <a href="<%= url_for(post.path) %>"> readMore → </a>
-        </p>
+            <p class="subtitle is-4">
+                <% if(theme.post_list && theme.post_list.read_more && theme.post_list.read_more.enable){ %>
+                    <%= truncate(strip_html(post.content),
+                            {length: theme.post_list.read_more.lenght?300:theme.post_list.read_more.length}) %>
+                <% } else { %>
+                    <%= strip_html(post.excerpt) %>
+                <% } %>
+                <a href="<%= url_for(post.path) %>"> readMore → </a>
+            </p>
 
-        <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
-    </div>
-<% }) %>
+            <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+        </div>
+    <% }) %>
 </div>
