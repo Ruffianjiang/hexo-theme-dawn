@@ -1,3 +1,85 @@
 <div class="is-rounded tools">
-    <a class="pagination-link" aria-label="Goto page 1">1</a>
+    <a class="pagination-link tools-switch toggle-up" href="#" id="tools-switch">
+        <i class="gg-options"></i>
+    </a>
+    <a class="pagination-link tools-item" href="#" id="tools-up">
+        <i class="gg-push-chevron-up"></i>
+    </a>
+    <a class="pagination-link tools-item" href="#" id="tools-mode-dark">
+        <i class="gg-moon"></i>
+    </a>
+    <a class="pagination-link tools-item" href="#" id="tools-theme">
+        <i class="gg-smile"></i>
+    </a>
+    <a class="pagination-link tools-item" href="#" id="tools-widget">
+        <i class="gg-menu-left-alt"></i>
+    </a>
+    <a class="pagination-link tools-item" href="#" id="tools-post-menu">
+        <i class="gg-menu-right-alt"></i>
+    </a>
 </div>
+
+<script type="text/javascript">
+
+    $(function () {
+        // 右下角展开工具
+        $("#tools-switch").on("click", function (e) {
+
+            $(e.currentTarget).toggleClass("toggle-up");
+            $(e.currentTarget).toggleClass("toggle-down");
+
+            $("#tools-up").toggleClass("toggle-show");
+            $("#tools-mode-dark").toggleClass("toggle-show");
+            $("#tools-theme").toggleClass("toggle-show");
+            $("#tools-widget").toggleClass("toggle-show");
+            $("#tools-post-menu").toggleClass("toggle-show");
+            return ;
+        });
+
+
+        // 暗黑模式
+        $("#tools-mode-dark").on("click", function (e){
+            $(e.currentTarget).toggleClass("active");
+            if($(e.currentTarget).hasClass("active")) {
+                localStorage.setItem("tools-mode-dark", "true");
+            } else {
+                localStorage.setItem("tools-mode-dark", "false");
+            }
+            tools_mode_dark();
+            return ;
+        });
+        function tools_mode_dark(){
+            // 设置
+            var toolsMode = localStorage.getItem("tools-mode-dark");
+            if(toolsMode == null || toolsMode == "false") {
+                // 普通模式
+                $("#tools-mode-dark").removeClass("active");
+                document.documentElement.style.setProperty("--color","hsl(0, 0%, 29%)");
+                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 100%)");
+                document.documentElement.style.setProperty("--ggs","hsl(0, 0%, 29%)");
+            } else {
+                // 暗黑模式
+                $("#tools-mode-dark").addClass("active");
+                document.documentElement.style.setProperty("--color","hsl(0, 0%, 100%)");
+                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 29%)");
+                document.documentElement.style.setProperty("--ggs","hsl(0, 0%, 100%)");
+            }
+            return ;
+        }
+        tools_mode_dark();
+
+        // 左侧查件
+
+
+
+        // 文章菜单
+
+
+
+        // 主题
+
+
+    });
+
+
+</script>

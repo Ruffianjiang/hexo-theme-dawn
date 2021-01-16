@@ -1,0 +1,78 @@
+.tools{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius:50%;
+    z-index: 9999;
+    a{
+        border-radius:50%;
+    }
+
+    .toggle-up {
+        animation-name: toggle-up;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .toggle-down {
+        animation-name: toggle-down;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /*animations*/
+    @keyframes toggle-up {
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes toggle-down {
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    .tools-switch{
+        background-color: var(--theme-color);
+        font-size: 1.2rem;
+        z-index: 99999;
+    }
+
+    .tools-item{
+        background-color: var(--bg-color);
+        position: absolute;
+        opacity: 0;
+        right: 0px;
+        transition: all .5s ease 0s;
+    }
+    .tools-item.active{
+        background-color: var(--theme-color);
+    }
+    .tools-item:hover{
+        background-color: var(--theme-color);
+    }
+
+    .toggle-show {
+        opacity: 1;
+        transition: all .5s ease 0s;
+    }
+    .toggle-show#tools-up {
+        transform: translate3d(-10%, -300%, 0);
+    }
+    .toggle-show#tools-mode-dark {
+        transform: translate3d(-10%, -170%, 0) rotate(90deg);
+    }
+    .toggle-show#tools-theme {
+        transform: translate3d(-120%, -100%, 0);
+    }
+    .toggle-show#tools-widget {
+        transform: translate3d(-300%, 20%, 0);
+    }
+    .toggle-show#tools-post-menu {
+        transform: translate3d(-180%, 20%, 0);
+    }
+
+
+
+}

@@ -1,0 +1,13 @@
+
+
+.bd-snippet-preview {
+    padding: 1.5rem;
+    .menu-item a{
+        color: var(--color);
+    }
+    .menu-item a:hover{
+        color: var(--theme-color);
+        border-bottom-color: var(--theme-color);
+    }
+
+}
