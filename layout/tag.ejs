@@ -19,10 +19,10 @@
         <a href="<%- url_for(item.path) %>" title="#<%= item.name %>"># <%= item.name %></a>
         <small class="text-muted">(Total <%= item.posts.length %> articles)</small>
       </h3>
-      <div class="columns is-desktop">
+      <div class="row">
         <% item.posts.each(function(post, i){ %>
-        <div class="column is-3">
-          <%- partial('_page/tags/tag-post-card', {post: post, type: 'card'}) %>
+        <div class="col-md-6">
+          <%- partial('_partial/item-post', {post: post, type: 'card'}) %>
         </div>
         <% }) %>
       </div>

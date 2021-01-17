@@ -1,7 +1,7 @@
 :root {
   --theme-color: hsl(171, 100%, 41%);
   --color: hsl(0, 0%, 10%);
-  --bg-color: hsl(0, 0%, 93%);
+  --bg-color: hsl(0, 0%, 100%);
   --border-color: #dbdbdb;
   --border-hover-color: #b5b5b5; }
 
@@ -11,11 +11,11 @@ body {
 
 ::-moz-selection {
   background: var(--theme-color);
-  color: #ededed; }
+  color: white; }
 
 ::selection {
   background: var(--theme-color);
-  color: #ededed; }
+  color: white; }
 
 .hljs:before {
   display: block;
