@@ -1,5 +1,5 @@
 <div class="is-rounded tools">
-    <a class="pagination-link tools-switch toggle-up" href="#" id="tools-switch">
+    <a class="pagination-link tools-switch tools-switch-up" href="#" id="tools-switch">
         <i class="gg-options"></i>
     </a>
     <a class="pagination-link tools-item" href="#" id="tools-up">
@@ -25,14 +25,14 @@
         // 右下角展开工具
         $("#tools-switch").on("click", function (e) {
 
-            $(e.currentTarget).toggleClass("toggle-up");
-            $(e.currentTarget).toggleClass("toggle-down");
+            $(e.currentTarget).toggleClass("tools-switch-up");
+            $(e.currentTarget).toggleClass("tools-switch-down");
 
-            $("#tools-up").toggleClass("toggle-show");
-            $("#tools-mode-dark").toggleClass("toggle-show");
-            $("#tools-theme").toggleClass("toggle-show");
-            $("#tools-widget").toggleClass("toggle-show");
-            $("#tools-post-menu").toggleClass("toggle-show");
+            $("#tools-up").toggleClass("tools-item-show");
+            $("#tools-mode-dark").toggleClass("tools-item-show");
+            $("#tools-theme").toggleClass("tools-item-show");
+            $("#tools-widget").toggleClass("tools-item-show");
+            $("#tools-post-menu").toggleClass("tools-item-show");
             return ;
         });
 
@@ -54,15 +54,13 @@
             if(toolsMode == null || toolsMode == "false") {
                 // 普通模式
                 $("#tools-mode-dark").removeClass("active");
-                document.documentElement.style.setProperty("--color","hsl(0, 0%, 29%)");
-                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 100%)");
-                document.documentElement.style.setProperty("--ggs","hsl(0, 0%, 29%)");
+                document.documentElement.style.setProperty("--color","hsl(0, 0%, 10%)");
+                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 93%)");
             } else {
                 // 暗黑模式
                 $("#tools-mode-dark").addClass("active");
-                document.documentElement.style.setProperty("--color","hsl(0, 0%, 100%)");
-                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 29%)");
-                document.documentElement.style.setProperty("--ggs","hsl(0, 0%, 100%)");
+                document.documentElement.style.setProperty("--color","hsl(0, 0%, 93%)");
+                document.documentElement.style.setProperty("--bg-color","hsl(0, 0%, 10%)");
             }
             return ;
         }

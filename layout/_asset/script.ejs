@@ -3,9 +3,17 @@
 window.jQuery || document.write('<script src="asset/js/jquery.min.js"><\/script>')
 </script>
 
-<%- js('asset/js/plugin.min') %>
-<%- js('asset/js/application') %>
-<%- partial('_script/search') %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/go.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<%#- js('asset/js/plugin.min') %>
+<%#- js('asset/js/application') %>
+<%#- partial('_script/search') %>
 <% if (page.layout === 'menu-repository'){ %>
    <%- partial('_script/repository') %>
 <% } %>
@@ -15,5 +23,5 @@ window.jQuery || document.write('<script src="asset/js/jquery.min.js"><\/script>
 <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
    <%- partial('_script/comment') %>
 <% } %>
-<%- partial('_script/fancybox') %>
-<%- partial('_script/analytics') %>
+<%#- partial('_script/fancybox') %>
+<%#- partial('_script/analytics') %>

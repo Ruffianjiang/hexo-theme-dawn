@@ -5,8 +5,12 @@ hexo bangumi -u & hexo clean & hexo generate & hexo serve
 hexo bangumi -u & hexo clean & hexo generate & hexo deploy
 
 
+<!-- css -->
 <!-- https://semantic-ui.com -->
-
 
 https://css.gg/app
 https://bulma.io/documentation/
+
+<!-- code highLight -->
+https://highlightjs.org/
+npm install highlight.js

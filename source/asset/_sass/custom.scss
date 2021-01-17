@@ -2,9 +2,10 @@
 
 :root{
   --theme-color: hsl(171, 100%, 41%);
-  --color: hsl(0, 0%, 29%);
+  --color: hsl(0, 0%, 10%);
   --bg-color: hsl(0, 0%, 93%);
-  --ggs: hsl(0, 0%, 29%);
+  --border-color: #dbdbdb;
+  --border-hover-color: #b5b5b5;
 }
 
 // 暗黑模式
@@ -27,6 +28,8 @@ body{
 
 
 @import "_common/footer";
+@import "_common/highlight";
 @import "_common/menus";
 @import "_common/tools";
+@import "_common/pagination";
 @import "_page/post-list.scss";
