@@ -1,69 +1,95 @@
+---
+name: Deutsch
+title:
+  archive: Archiv
+  category: Kategorie
+  tag: Schlagwort
+  schedule: Zeitplan
 menu:
-  docs: Dokumentation
-  api: API
-  news: Neuigkeiten
-  plugins: Plugins
-  themes: Themes
+  home: Startseite
+  archives: Archiv
+  categories: Kategorien
+  tags: Schlagwörter
+  about: Über
   search: Suche
-
-index:
-  get_started: Leg los
-
-page:
-  contents: Inhalt
-  back_to_top: Nach oben
-  improve: Dieses Dokument verbessern
-  prev: Zurück
-  next: Vor
-  last_updated: "Zuletzt aktualisiert: %s"
-
+  schedule: Zeitplan
+  sitemap: Sitemap
+  commonweal: Commonweal 404
 sidebar:
-  docs:
-    getting_started: Leg los
-    overview: Übersicht
-    setup: Einrichtung
-    configuration: Konfiguration
-    commands: Commands
-    migration: Migration
-    basic_usage: Basic Usage
-    writing: Writing
-    front_matter: Front-matter
-    tag_plugins: Tag Plugins
-    asset_folders: Asset Folders
-    data_files: Data Files
-    server: Server
-    generating: Generating
-    deployment: Deployment
-    customization: Customization
-    permalinks: Permalinks
-    themes: Themes
-    structure: Structure
-    templates: Templates
-    variables: Variables
-    helpers: Helpers
-    internationalization: Internationalization (i18n)
-    plugins: Plugins
-    miscellaneous: Miscellaneous
-    troubleshooting: Troubleshooting
-    contributing: Contributing
-  api:
-    core: Core
-    overview: Overview
-    events: Events
-    locals: Locals
-    router: Router
-    box: Box
-    rendering: Rendering
-    posts: Posts
-    scaffolds: Scaffolds
-    themes: Themes
-    extensions: Extensions
-    console: Console
-    deployer: Deployer
-    filter: Filter
-    generator: Generator
-    helper: Helper
-    migrator: Migrator
-    processor: Processor
-    renderer: Renderer
-    tag: Tag
+  overview: Übersicht
+  toc: Inhaltsverzeichnis
+post:
+  posted: Veröffentlicht am
+  edited: Bearbeitet am
+  created: Erstellt
+  modified: Geändert am
+  edit: Diesen Beitrag bearbeiten
+  in: in
+  read_more: Weiterlesen
+  untitled: Unbenannt
+  sticky: Angepinnt
+  views: Aufrufe
+  related_posts: Ähnliche Beiträge
+  copyright:
+    author: Beitragsautor
+    link: Beitragslink
+    post_author: Written by
+    post_link: This article originally appeared on
+    license_title: Urheberrechtshinweis
+    license_content: "Alle Artikel in diesem Blog sind unter %s lizenziert, außer es wird anders angegeben."
+footer:
+  powered: "Erstellt mit  %s"
+  total_views: Alle Aufrufe
+  total_visitors: Alle Besucher
+counter:
+  tag_cloud:
+    zero: Keine Schlagworte
+    one: Insgesamt ein Schlagwort
+    other: "Insgesamt %d Schlagwörter"
+  categories:
+    zero: Keine Kategorien
+    one: Insgesamt eine Kategorie
+    other: "Insgesamt %d Kategorien"
+  archive_posts:
+    zero: Keine Artikel vorhanden.
+    one: Ein Artikel.
+    other: "Insgesamt %d Artikel."
+state:
+  posts: Artikel
+  tags: schlagwörter
+  categories: Kategorien
+search:
+  placeholder: Suche...
+  empty: "We didn't find any results for the search: %s"
+  hits_time: "%s results found in %s ms"
+  hits: "%s results found"
+cheers:
+  um: Öhm..
+  ok: OK
+  nice: Schön
+  good: Gut
+  great: Wunderbar
+  excellent: Exzellent
+keep_on: Bleib dran.
+symbol:
+  comma: ". "
+  period: ", "
+  colon: ": "
+reward:
+  donate: Spenden
+  wechatpay: WeChat Bezahlung
+  alipay: Alipay
+  paypal: PayPal
+  bitcoin: Bitcoin
+follow_me:
+  welcome: Willkommen zu meinen anderen Veröffentlichen Kanälen
+accessibility:
+  nav_toggle: Navigationsleiste an/ausschalten
+  prev_page: Vorherige Seite
+  next_page: Nächste Seite
+symbols_count_time:
+  count: Symbole im Artikel gezählt
+  count_total: Insgesamt gezählte Symbole
+  time: Lesezeit
+  time_total: Insgesamte Lesezeit
+  time_minutes: minuten.

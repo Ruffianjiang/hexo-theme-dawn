@@ -1,69 +1,95 @@
+---
+name: Русский
+title:
+  archive: Архив
+  category: Категория
+  tag: Тэг
+  schedule: Календарь
 menu:
-  docs: Docs
-  api: API
-  news: Новости
-  plugins: Плагины
-  themes: Темы
+  home: Главная
+  archives: Архив
+  categories: Категории
+  tags: Тэги
+  about: О сайте
   search: Поиск
-
-index:
-  get_started: Начнём
-
-page:
-  contents: Содержание
-  back_to_top: Наверх
-  improve: Предложить улучшение
-  prev: Пред
-  next: След
-  last_updated: "Последнее обновление: %s"
-
+  schedule: Календарь
+  sitemap: Карта сайта
+  commonweal: Страница 404
 sidebar:
-  docs:
-    getting_started: Начало работы
-    overview: Обзор
-    setup: Установка
-    configuration: Конфигурация
-    commands: Команды
-    migration: Миграция
-    basic_usage: Основы
-    writing: Написание
-    front_matter: Шапка файла
-    tag_plugins: Плагины тэгов
-    asset_folders: Папки с материалами
-    data_files: Файлы с данными
-    server: Сервер
-    generating: Генерация
-    deployment: Публикация
-    customization: Кастомизация
-    permalinks: Постоянные ссылки
-    themes: Темы
-    structure: Структура
-    templates: Шаблоны
-    variables: Переменные
-    helpers: Помощники
-    internationalization: Интернацинализация (i18n)
-    plugins: Плагины
-    miscellaneous: Разное
-    troubleshooting: Решение проблем
-    contributing: Содействие
-  api:
-    core: Ядро
-    overview: Обзор
-    events: События
-    locals: Переменные
-    router: Маршруты
-    box: Модуль
-    rendering: Рендеринг
-    posts: Посты
-    scaffolds: Заготовки
-    themes: Темы
-    extensions: Расширения
-    console: Консоль
-    deployer: Инструмент размещения
-    filter: Фильтр
-    generator: Генератор
-    helper: Помошник
-    migrator: Мигратор
-    processor: Обработчик
-    renderer: Рендер
-    tag: Тэг
+  overview: Обзор
+  toc: Содержание
+post:
+  posted: Размещено
+  edited: Изменено
+  created: Создано
+  modified: Изменено
+  edit: Редактировать запись
+  in: в категории
+  read_more: Читать полностью
+  untitled: Без имени
+  sticky: Ссылка
+  views: Просмотров
+  related_posts: Похожие записи
+  copyright:
+    author: Автор записи
+    link: Ссылка на запись
+    post_author: Written by
+    post_link: This article originally appeared on
+    license_title: Информация об авторских правах
+    license_content: "Все записи на этом сайте защищены лицензией %s, если не указано дополнительно."
+footer:
+  powered: "Генератор — %s"
+  total_views: Всего просмотров
+  total_visitors: Всего посетителей
+counter:
+  tag_cloud:
+    zero: Нет тэгов.
+    one: 1 тэг.
+    other: "%d тэгов всего."
+  categories:
+    zero: Нет категорий.
+    one: 1 категория.
+    other: "%d категорий всего."
+  archive_posts:
+    zero: Нет записей.
+    one: 1 запись.
+    other: "%d записей всего."
+state:
+  posts: Архив
+  tags: Тэги
+  categories: Категории
+search:
+  placeholder: Поиск...
+  empty: "We didn't find any results for the search: %s"
+  hits_time: "%s results found in %s ms"
+  hits: "%s results found"
+cheers:
+  um: Эм..
+  ok: OK
+  nice: Неплохо
+  good: Хорошо
+  great: Замечательно
+  excellent: Великолепно
+keep_on: Продолжаю писать.
+symbol:
+  comma: ", "
+  period: ". "
+  colon: ": "
+reward:
+  donate: Донат
+  wechatpay: WeChat Pay
+  alipay: Alipay
+  paypal: PayPal
+  bitcoin: Bitcoin
+follow_me:
+  welcome: Добро пожаловать на другие мои издательские каналы
+accessibility:
+  nav_toggle: Показать/скрыть меню
+  prev_page: Предыдущая страница
+  next_page: Следующая страница
+symbols_count_time:
+  count: Кол-во символов в статье
+  count_total: Общее кол-во символов
+  time: Время чтения
+  time_total: Общее время чтения
+  time_minutes: мин.

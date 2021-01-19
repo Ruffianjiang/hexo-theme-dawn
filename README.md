@@ -1,208 +1,167 @@
-# dawn
+<div align="right">
+  Language:
+  🇺🇸
+  <a title="Chinese" href="docs/zh-CN/README.md">🇨🇳</a>
+  <a title="Russian" href="docs/ru/README.md">🇷🇺</a>
+</div>
 
-A brand new default theme for [[Hexo](https://hexo.io)].  
-[Preview](http://Ruffianjiang.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
+![NexT preview](https://user-images.githubusercontent.com/16272760/99784261-872d3200-2b56-11eb-807c-869042d1f6e8.png)
 
-![](_doc/images/dawn.png)
+<a title="NexT website" href="https://theme-next.js.org"><img align="right" alt="NexT logo" width="100" height="100" src="https://raw.githubusercontent.com/next-theme/hexo-theme-next/master/source/images/logo.svg"></a>
 
-## Features
+# NexT
 
-- Multiple languages support
-- Comment support
-- Tags page
-- Categories page
-- Social Media
+> «NexT» is a high quality elegant [Hexo](https://hexo.io) theme. It is crafted from scratch with love.
 
-## Skins
+[![NPM version](https://img.shields.io/npm/v/hexo-theme-next?color=red&logo=npm&style=flat-square)](https://www.npmjs.com/package/hexo-theme-next)
+[![Required Hexo version](https://img.shields.io/badge/hexo-%3E=5.0.0-blue?style=flat-square&logo=hexo)](https://hexo.io)
+[![License](https://img.shields.io/badge/license-%20AGPL-orange?style=flat-square&logo=gnu)](https://github.com/next-theme/hexo-theme-next/blob/master/LICENSE.md)
+[![Build Status](https://img.shields.io/github/workflow/status/next-theme/hexo-theme-next/Linter?label=test&logo=github&style=flat-square)](https://github.com/next-theme/hexo-theme-next/actions?query=workflow%3ALinter)
+[![Build Status](https://img.shields.io/github/workflow/status/next-theme/hexo-theme-next/Tester?logo=github&style=flat-square)](https://github.com/next-theme/hexo-theme-next/actions?query=workflow%3ATester)
+[![jsDelivr hits](https://img.shields.io/jsdelivr/npm/hm/hexo-theme-next?style=flat-square&logo=jsdelivr)](https://www.jsdelivr.com/package/npm/hexo-theme-next)
 
-![](_doc/images/dawn-theme-black.png)
+## Live Preview
 
-![](_doc/images/dawn-theme-blue.png)
+<p align="center">
+  💟 <a href="https://theme-next.js.org/muse/">Muse</a> | 🔯 <a href="https://theme-next.js.org/mist/">Mist</a> | ♓️ <a href="https://theme-next.js.org/pisces/">Pisces</a> | ♊️ <a href="https://theme-next.js.org">Gemini</a>
+<br>
+<br>
+  More «NexT» examples <a href="https://github.com/next-theme/awesome-next#live-preview">here</a>.
+</p>
 
-![](_doc/images/dawn-theme-green.png)
+## Installation
 
-![](_doc/images/dawn-theme-purple.png)
+If you're using Hexo 5.0 or later, the simplest way to install is through npm:
 
-## Appearance
-
-[Home](http://Ruffianjiang.github.io/) |
-[Archives](http://Ruffianjiang.github.io/archives/) |
-[Categories](http://Ruffianjiang.github.io/categories/) |
-[Tags](http://Ruffianjiang.github.io/tags/) |
-[Repository](http://Ruffianjiang.github.io/repository/) |
-[Books](http://Ruffianjiang.github.io/books/) |
-[Links](http://Ruffianjiang.github.io/links/) |
-[About](http://Ruffianjiang.github.io/about/)
-
-## Quick start
-> 在 Hexo中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件。
-
-第一步、站点根目录下执行如下命令，下载主题
-```shell
-git clone https://github.com/Ruffianjiang/hexo-theme-dawn.git themes/dawn
+```sh
+$ cd hexo-site
+$ npm install hexo-theme-next
 ```
 
-需要更新时，使用如下命令
-```shell
-cd themes/dawn
-git pull
+Or you can clone the entire repository:
+
+```sh
+$ cd hexo-site
+$ git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
-第二步、主题目录下配置文件`_config.yml`复制一份到站点目录下，重命名为`_config.dawn.yml`
-> `_config.yml`和`_config.dawn.yml.light`内容一致，为轻量配置，开箱即用，建议初次安装使用此配置，`_config.dawn.yml.all`为全部配置，需要安装一些插件，推荐部署好站点后，需要定制插件时，作为参考使用
+See [detailed installation instructions][docs-installation-url] if you want any other variant.
 
-第三步、打开站点目录下的配置文件`_config.yml`，找到`theme`字段，将其值更改为`dawn`
-```yaml
-theme: dawn
-```
-
-第四步、编译并启动
-```shell
-hexo clean & hexo generate & hexo serve
-```
-
-访问`localhost:4000`现在来看看你的博客吧~~
-
-其他定制功能，请访问 [wiki](https://github.com/Ruffianjiang/hexo-theme-dawn/wiki)
-
-
-
-## Install plugin
-
-### [hexo-wordcount](https://github.com/willin/hexo-wordcount)
-
-```
-npm install hexo-wordcount --save
-```
-### [hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)
-
-```
-npm install hexo-generator-json-content --save
-```
-### [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
-
-```
-npm install hexo-generator-feed --save
-```
-### [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
-
-```
-npm install hexo-generator-sitemap --save
-```
-### [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
-
-```
-npm install hexo-generator-baidu-sitemap --save
-```
-## Data files
-Sometimes you may need to use some data in templates which is not directly available in your posts, or you want to reuse the data elsewhere. For such use cases, Hexo 3 introduced the new Data files. This feature loads YAML or JSON files in source/_data folder so you can use them in your site.
-
-For example, add links.yml in source/_data folder.
-
-### links data
-
-add links.yml in source/_data folder.
-
-The format of the link :
-
-```
-Name:
-    link: http://example.com
-    avatar: http://example.com/avatar.png
-    desc: description
-```
-Add a number of links, we just need to repeat the format according to the above.
-
-## Blog optimization
-
-### [hexo-neat](https://github.com/rozbo/hexo-neat)
-
-> auto Minify html、js、css and make it neat
-
-```
-npm install hexo-neat --save
-```
-
-You can configure this plugin in `_config.yml`.
-
-```
-# hexo-neat
-neat_enable: true
-neat_html:
-  enable: true
-  exclude:  
-neat_css:
-  enable: true
-  exclude:
-    - '*.min.css'
-neat_js:
-  enable: true
-  mangle: true
-  output:
-  compress:
-  exclude:
-    - '*.min.js' 
-```
-
-### [hexo-baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)
-
-```
-npm install hexo-baidu-url-submit --save
-```
-
-### [hexo-translate-title](https://github.com/cometlj/hexo-translate-title)
-> translate the chinese title of Hexo blog to english words automatially
-
-```
-npm install hexo-translate-title --save
-```
-
-You can configure this plugin in `_config.yml`.
+After the installation, open Hexo config file and set `theme` variable to `next`.
 
 ```yml
-translate_title:
-  translate_way: google    #google | baidu | youdao
-  youdao_api_key: XXX
-  youdao_keyfrom: XXX
-  is_need_proxy: true     #true | false
-  proxy_url: http://localhost:8123
-```
-## Mathjax Support
-
-### [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
-
-install
-
-```
-npm un hexo-renderer-marked --save
-npm i hexo-renderer-markdown-it-plus --save
+theme: next
 ```
 
-You can configure this plugin in `_config.yml`.
+## Configuration
 
-```
-markdown_it_plus:
-  highlight: true
-  html: true
-  xhtmlOut: true
-  breaks: true
-  langPrefix:
-  linkify: true
-  typographer:
-  quotes: “”‘’
-  plugins:
-    - plugin:
-        name: markdown-it-katex
-        enable: true
-    - plugin:
-        name: markdown-it-mark
-        enable: false  
-```
+At present, NexT encourages users to use the [Alternate Theme Config][docs-configuration-url] to configure NexT. And it's easy to customize the layout or style of NexT using [Custom Files][docs-custom-files-url].
 
-Article enable mathjax
+It is not recommended to directly modify any files in the NexT theme. Because this may cause errors (e.g. merge conflicts), and the modified files may be discarded when upgrading the theme.
 
-```
-title: Hello World
-mathjax: true
+However, you can bypass merge conflicts (error message like **«Commit your changes or stash them before you can merge»**) by using the `Commit`, `Stash` or `Reset` commands for local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
+
+## Plugins
+
+Plugins extend and expand the functionality of NexT. There are two types of plugins: core plugins and third-party plugins. The core plugins are required by the basic functions of NexT. Third-party plugins provide a large number of optional features.
+
+Configuring these plugins is very easy. For example, if you want to enable `pjax` on your site, just set `pjax` to `true` in NexT config file:
+
+```yml
+# Easily enable fast Ajax navigation on your website.
+# For more information: https://github.com/next-theme/pjax
+pjax: true
 ```
 
+### Configure CDN
+
+Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com) CDN by default. We also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com).
+
+For example, if you want to use `unpkg` instead of `jsdelivr` as the default CDN provider, you need to edit the following settings in NexT config file:
+
+```yml
+vendors:
+  # ...
+  # Some contents...
+  # ...
+  plugins: unpkg
+```
+
+## Update
+
+A new version of NexT will be released every month. Please read the [release notes][docs-release-url] before updating the theme. You can update NexT by the following command.
+
+Install the latest version throuth npm:
+
+```sh
+$ cd hexo-site
+$ npm install hexo-theme-next@latest
+```
+
+Or update to the latest master branch:
+
+```sh
+$ cd themes/next
+$ git pull
+```
+
+**If you want to update from v5.x / v7.x to the latest version, read [this][docs-upgrade-url].**
+
+## Feedback
+
+* Visit the [Awesome NexT][awesome-next-url] list to share plugins and tutorials with other users.
+* Join our [GitHub discussions][discussions-url] / [Gitter][gitter-url] chats.
+* [Add or improve translation][i18n-url] in few seconds.
+* Report a bug in [GitHub Issues][issues-bug-url].
+* Request a new feature on [GitHub][issues-feat-url].
+* Vote for [popular feature requests][feat-req-vote-url].
+
+## Contributing
+
+We welcome you to join the development of NexT. Please see [contributing document][contributing-document-url]. 🤗
+
+Also, we welcome Issue or PR to our [official-plugins][official-plugins-url].
+
+## Contributors
+
+[![Contributors][contributors-image]][contributors-url]
+
+## Thanks
+
+«NexT» send special thanks to these great services that sponsor our core infrastructure:
+
+<a href="https://github.com"><img height="40" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"></a>
+
+> GitHub allows us to host the Git repository and run the test suite.
+
+<a href="https://www.netlify.com"><img height="40" src="https://www.netlify.com/img/press/logos/full-logo-light.svg"></a>
+
+> Netlify allows us to distribute the documentation.
+
+<a href="https://crowdin.com"><img height="40" src="https://support.crowdin.com/assets/logos/crowdin-logo-small-black.svg"></a>
+
+> Crowdin allows us to translate conveniently the documentation.
+
+<a href="https://www.jsdelivr.com"><img height="40" src="https://raw.githubusercontent.com/jsdelivr/jsdelivr-media/master/default/svg/jsdelivr-logo-horizontal.svg"></a>
+
+> Thanks jsDelivr for providing public CDN service.
+
+[docs-installation-url]: https://theme-next.js.org/docs/getting-started/installation.html
+[docs-configuration-url]: https://theme-next.js.org/docs/getting-started/configuration.html
+[docs-custom-files-url]: https://theme-next.js.org/docs/advanced-settings/custom-files.html
+[docs-release-url]: https://github.com/next-theme/hexo-theme-next/releases
+[docs-upgrade-url]: https://theme-next.js.org/docs/getting-started/upgrade.html
+
+[awesome-next-url]: https://github.com/next-theme/awesome-next
+[discussions-url]: https://github.com/next-theme/hexo-theme-next/discussions
+[gitter-url]: https://gitter.im/hexo-next
+[i18n-url]: https://crowdin.com/project/hexo-theme-next
+
+[issues-bug-url]: https://github.com/next-theme/hexo-theme-next/issues/new?assignees=&labels=Bug&template=bug-report.md
+[issues-feat-url]: https://github.com/next-theme/hexo-theme-next/issues/new?assignees=&labels=Feature+Request&template=feature-request.md
+[feat-req-vote-url]: https://github.com/next-theme/hexo-theme-next/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22
+
+[contributing-document-url]: https://github.com/next-theme/hexo-theme-next/blob/master/.github/CONTRIBUTING.md
+[official-plugins-url]: https://github.com/next-theme
+[contributors-image]: https://raw.githubusercontent.com/next-theme/contributors/master/contributors.svg
+[contributors-url]: https://github.com/next-theme/hexo-theme-next/blob/master/docs/AUTHORS.md
