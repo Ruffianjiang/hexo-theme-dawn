@@ -1,1 +1,0 @@
-<script defer type="text/javascript" src="//tajs.qq.com/stats?sId=<%= theme.plugins.tencent_analytics %>" charset="UTF-8"></script>

@@ -1,5 +1,7 @@
 .DS_Store
-node_modules
-tmp
-source/CNAME
-.idea/*
+.idea/
+*.log
+*.iml
+yarn.lock
+package-lock.json
+node_modules/

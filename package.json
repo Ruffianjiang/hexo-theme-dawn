@@ -1,51 +1,46 @@
 {
-  "name": "hexo-theme-dawn",
-  "version": "2.0.0",
+  "name": "hexo-theme-next",
+  "version": "8.2.0",
   "description": "Elegant and powerful theme for Hexo.",
   "main": "package.json",
+  "files": [
+    "docs",
+    "languages",
+    "layout",
+    "scripts",
+    "source",
+    "_config.yml",
+    "_vendors.yml"
+  ],
   "scripts": {
-    "eslint": "eslint scripts/ source/asset/js test/",
+    "eslint": "eslint scripts/ source/js test/",
     "stylint": "stylint source/css/",
     "test": "mocha test/index.js"
   },
-  "repository": "Ruffianjiang/hexo-theme-dawn",
+  "repository": "next-theme/hexo-theme-next",
   "keywords": [
     "hexo",
     "theme",
-    "dawn"
+    "next"
   ],
-  "author": "Ruffianjiang <jiangyj0516@outlook.com> (https://github.com/Ruffianjiang)",
+  "author": "NexT (https://theme-next.js.org)",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Ruffianjiang/hexo-theme-dawn/issues"
+    "url": "https://github.com/next-theme/hexo-theme-next/issues"
   },
-  "homepage": "https://github.com/Ruffianjiang/hexo-theme-dawn",
-  "dependencies": {
-    "axios": ">=0.21.1",
+  "homepage": "https://theme-next.js.org",
+  "devDependencies": {
+    "@next-theme/eslint-config": "0.0.2",
     "chai": "4.2.0",
-    "hexo": "5.2.0",
-    "husky": "4.3.0",
-    "js-yaml": "3.14.0",
-    "lodash": "^4.17.20",
+    "eslint": "7.16.0",
+    "hexo": "5.3.0",
+    "hexo-renderer-marked": "3.3.0",
+    "husky": "4.3.6",
+    "js-yaml": "3.14.1",
     "mocha": "8.2.1",
-    "set-value": ">=2.0.1",
     "stylint": "2.0.0",
-    "swig": "^1.4.2",
-    "swig-templates": "^2.0.3",
-    "hexo-bilibili-bangumi": "^1.5.1",
-    "hexo-deployer-git": "^2.1.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-sitemap": "^2.1.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^3.0.0",
-    "hexo-renderer-stylus": "^2.0.0",
-    "hexo-server": "^2.0.0",
-    "hexo-theme-landscape": "^0.0.3",
-    "hexo-wordcount": "^6.0.1",
-    "update": "^0.7.4"
+    "hexo-wordcount": "^2.0.1",
+    "hexo-helper-live2d": "^3.1.1"
   },
   "husky": {
     "hooks": {
