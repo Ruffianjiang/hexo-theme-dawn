@@ -967,3 +967,13 @@ vendors:
 css: css
 js: js
 images: images
+
+# ===============================================================
+# GitHub Pages (Jekyll) 构建配置
+# ===============================================================
+# 排除主题文档目录 docs/：该目录为 NexT 上游文档，正文以 `{% note %}`、`{% button %}` 等
+# Liquid 标签作为示例文字出现，被 GitHub Pages 的 Jekyll 误当作 Liquid 标签解析，
+# 导致构建失败（Liquid syntax error: Unknown tag 'note' in docs/AUTHORS.md）。
+# docs/ 是仓库内部文档而非发布站点内容，故从 Jekyll 构建中排除。
+exclude:
+  - docs
